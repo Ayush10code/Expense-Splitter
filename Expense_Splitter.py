@@ -80,7 +80,11 @@ if start == 'y':
         elif choice == 3:
             if(len(participants)==0):
                 print("Add participants first.....")
-            calculateBalance(a)
+                continue
+            try:
+                calculateBalance(a)
+            except:
+                print("Add participants first......")
 
         elif choice == 4:
             print("\nExpense File ")
